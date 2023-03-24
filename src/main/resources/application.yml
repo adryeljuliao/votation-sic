@@ -10,7 +10,7 @@ spring:
       ddl-auto: update
 
 server:
-  port: ${PORT:8080}
+  port: 80
 
 management:
   endpoints:
