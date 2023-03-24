@@ -18,6 +18,7 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 @RequestMapping("/questions")
 @RequiredArgsConstructor
+@CrossOrigin(origins = "*")
 public class QuestionController {
 
     private final QuestionService questionService;

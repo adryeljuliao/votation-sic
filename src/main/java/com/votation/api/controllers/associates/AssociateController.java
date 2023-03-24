@@ -18,6 +18,7 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 @RequestMapping("/associates")
 @RequiredArgsConstructor
+@CrossOrigin(origins = "*")
 public class AssociateController {
 
     private final AssociateService associateService;
