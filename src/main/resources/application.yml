@@ -1,14 +1,19 @@
 spring:
   datasource:
-    driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://root:r3XMIud20YNsbvlCXbDw@containers-us-west-199.railway.app:6254/railway
     username: root
     password: r3XMIud20YNsbvlCXbDw
   application:
     name: votation-api
   jpa:
-    database-platform: org.hibernate.dialect.MySQLDialect
     hibernate:
       ddl-auto: update
+
 server:
   port: ${PORT:8080}
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health, metrics
